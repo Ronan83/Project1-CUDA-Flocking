@@ -11,30 +11,33 @@ Project 1 - Flocking**
 
 <table>
 <tr>
-<td align="center"><b>5,000 Boids(Start)</b></td>
-<td align="center"><b>50,00 Boids(End)</b></td>
+<td align="center"><b>5000 Boids (Start)</b></td>
+<td align="center"><b>5000 Boids (End)</b></td>
 </tr>
 
 <tr>
 <td align="center">
-<img src="https://github.com/user-attachments/assets/8d2234d6-6c4c-4bfc-b37d-b9839306b5ad" width="500">
+<img src="https://github.com/user-attachments/assets/78b93e2e-4034-4433-9945-e73e3d479e12" width="500">
 </td>
 
 <td align="center">
 <img src="https://github.com/user-attachments/assets/8d2234d6-6c4c-4bfc-b37d-b9839306b5ad" width="500">
-
-<img width="804" height="647" alt="5000_start" src="https://github.com/user-attachments/assets/78b93e2e-4034-4433-9945-e73e3d479e12" />
-
-
-<img width="804" height="652" alt="50000_start-ezgif" src="https://github.com/user-attachments/assets/043f3e62-366b-4ee3-893e-0d3226c50844" />
-
-<img width="787" height="621" alt="50000_runing-ezgif" src="https://github.com/user-attachments/assets/fbef71ba-76ad-40e2-a414-198e752465ae" />
-
-  
 </td>
 </tr>
+
+<tr>
+<td align="center"><b>50000 Boids</b></td>
+<td align="center"><b>100000 Boids</b></td>
+</tr>
+
+<tr>
+<td align="center">
+<img src="https://github.com/user-attachments/assets/043f3e62-366b-4ee3-893e-0d3226c50844" width="500">
+</td>
+
+<td align="center">
+<img src="https://github.com/user-attachments/assets/c6f9ca68-6944-41a5-9be6-3295e22d027f" width="500">
+</td>
+</tr>
+
 </table>
-
-### 100,000 Boids
-
-<!-- 100,000 Boids GIF -->
