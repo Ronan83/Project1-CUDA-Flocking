@@ -450,14 +450,28 @@ __global__ void kernUpdateVelNeighborSearchScattered(
 
    glm::vec3 thisPos = pos[index];
 
-   glm::vec3 searchMin = (thisPos - gridMin - cellWidth * 0.5f) * inverseCellWidth;
-   int x = (int)searchMin.x;
-   int y = (int)searchMin.y;
-   int z = (int)searchMin.z;
+   //Grid-Looping
+   float maxDist = fmaxf(fmaxf(rule1Distance, rule2Distance), rule3Distance);
 
-   x = imin(gridResolution - 1, imax(0, x));
-   y = imin(gridResolution - 1, imax(0, y));
-   z = imin(gridResolution - 1, imax(0, z));
+   glm::vec3 minCorner = (thisPos - maxDist - gridMin) * inverseCellWidth;
+   glm::vec3 maxCorner = (thisPos + maxDist - gridMin) * inverseCellWidth;
+
+   int xMin = imax(0, (int)floorf(minCorner.x));
+   int yMin = imax(0, (int)floorf(minCorner.y));
+   int zMin = imax(0, (int)floorf(minCorner.z));
+
+   int xMax = imin(gridResolution - 1, (int)floorf(maxCorner.x));
+   int yMax = imin(gridResolution - 1, (int)floorf(maxCorner.y));
+   int zMax = imin(gridResolution - 1, (int)floorf(maxCorner.z));
+
+   //glm::vec3 searchMin = (thisPos - gridMin - cellWidth * 0.5f) * inverseCellWidth;
+   //int x = (int)searchMin.x;
+   //int y = (int)searchMin.y;
+   //int z = (int)searchMin.z;
+
+   //x = imin(gridResolution - 1, imax(0, x));
+   //y = imin(gridResolution - 1, imax(0, y));
+   //z = imin(gridResolution - 1, imax(0, z));
 
    glm::vec3 perceivedCenter(0.0f);
    glm::vec3 separate(0.0f);
@@ -466,12 +480,12 @@ __global__ void kernUpdateVelNeighborSearchScattered(
    int count3 = 0;
 
    
-   int yMax = imin(gridResolution - 1, y + 1);
-   int zMax = imin(gridResolution - 1, z + 1);
-   int xMax = imin(gridResolution - 1, x + 1);
-   for (int k = z; k <= zMax; k++) {
-       for (int j = y; j <= yMax; j++) {
-           for (int i = x; i <= xMax; i++) {
+   //int yMax = imin(gridResolution - 1, y + 1);
+   //int zMax = imin(gridResolution - 1, z + 1);
+   //int xMax = imin(gridResolution - 1, x + 1);
+   for (int k = zMin; k <= zMax; k++) {
+       for (int j = yMin; j <= yMax; j++) {
+           for (int i = xMin; i <= xMax; i++) {
                int cellIdx = gridIndex3Dto1D(i, j, k, gridResolution);
                int start = gridCellStartIndices[cellIdx];
                int end = gridCellEndIndices[cellIdx];
@@ -560,14 +574,29 @@ __global__ void kernUpdateVelNeighborSearchCoherent(
 
     glm::vec3 thisPos = pos[index];
 
-    glm::vec3 searchMin = (thisPos - gridMin - cellWidth * 0.5f) * inverseCellWidth;
+    //Grid-Looping
+
+    float maxDist = fmaxf(fmaxf(rule1Distance, rule2Distance), rule3Distance);
+
+    glm::vec3 minCorner = (thisPos - maxDist - gridMin) * inverseCellWidth;
+    glm::vec3 maxCorner = (thisPos + maxDist - gridMin) * inverseCellWidth;
+
+    int xMin = imax(0, (int)floorf(minCorner.x));
+    int yMin = imax(0, (int)floorf(minCorner.y));
+    int zMin = imax(0, (int)floorf(minCorner.z));
+
+    int xMax = imin(gridResolution - 1, (int)floorf(maxCorner.x));
+    int yMax = imin(gridResolution - 1, (int)floorf(maxCorner.y));
+    int zMax = imin(gridResolution - 1, (int)floorf(maxCorner.z));
+
+    /*glm::vec3 searchMin = (thisPos - gridMin - cellWidth * 0.5f) * inverseCellWidth;
     int x = (int)searchMin.x;
     int y = (int)searchMin.y;
     int z = (int)searchMin.z;
 
     x = imin(gridResolution - 1, imax(0, x));
     y = imin(gridResolution - 1, imax(0, y));
-    z = imin(gridResolution - 1, imax(0, z));
+    z = imin(gridResolution - 1, imax(0, z));*/
 
     glm::vec3 perceivedCenter(0.0f);
     glm::vec3 separate(0.0f);
@@ -576,12 +605,12 @@ __global__ void kernUpdateVelNeighborSearchCoherent(
     int count3 = 0;
 
 
-    int yMax = imin(gridResolution - 1, y + 1);
+    /*int yMax = imin(gridResolution - 1, y + 1);
     int zMax = imin(gridResolution - 1, z + 1);
-    int xMax = imin(gridResolution - 1, x + 1);
-    for (int k = z; k <= zMax; k++) {
-        for (int j = y; j <= yMax; j++) {
-            for (int i = x; i <= xMax; i++) {
+    int xMax = imin(gridResolution - 1, x + 1);*/
+    for (int k = zMin; k <= zMax; k++) {
+        for (int j = yMin; j <= yMax; j++) {
+            for (int i = xMin; i <= xMax; i++) {
                 int cellIdx = gridIndex3Dto1D(i, j, k, gridResolution);
                 int start = gridCellStartIndices[cellIdx];
                 int end = gridCellEndIndices[cellIdx];
