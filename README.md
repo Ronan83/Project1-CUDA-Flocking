@@ -1,9 +1,11 @@
 **University of Pennsylvania, CIS 5650: GPU Programming and Architecture,
 Project 1 - Flocking**
 
-* (TODO) YOUR NAME HERE
-  * (TODO) [LinkedIn](), [personal website](), [twitter](), etc.
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+University of Pennsylvania, CIS 5650: GPU Programming and Architecture, Project 1 - Flocking
+
+* Author: Xuan Zhu
+   * [LinkedIn](https://www.linkedin.com/in/xuan-zhu-4ba736220)
+* Tested on: Windows 11, AMD Ryzen AI 7 350, 32GB DDR5, NVIDIA GeForce RTX 5070 Laptop GPU (Personal computer)
 
 ### (TODO: Your README)
 
