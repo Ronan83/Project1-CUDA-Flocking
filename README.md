@@ -5,9 +5,9 @@ Project 1 - Flocking**
    * [LinkedIn](https://www.linkedin.com/in/xuan-zhu-4ba736220)
 * Tested on: Windows 11, AMD Ryzen AI 7 350, 32GB DDR5, NVIDIA GeForce RTX 5070 Laptop GPU (Personal computer)
 
-### Output result
+## Output result
 
-## GIFs
+### GIFs
 
 <table>
 <tr>
