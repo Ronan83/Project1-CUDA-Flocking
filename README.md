@@ -17,11 +17,11 @@ Project 1 - Flocking**
 
 <tr>
 <td align="center">
-<img src="https://github.com/user-attachments/assets/78b93e2e-4034-4433-9945-e73e3d479e12" width="500">
+<img src="https://github.com/user-attachments/assets/78b93e2e-4034-4433-9945-e73e3d479e12" width="400">
 </td>
 
 <td align="center">
-<img src="https://github.com/user-attachments/assets/8d2234d6-6c4c-4bfc-b37d-b9839306b5ad" width="500">
+<img src="https://github.com/user-attachments/assets/8d2234d6-6c4c-4bfc-b37d-b9839306b5ad" width="400">
 </td>
 </tr>
 
@@ -32,11 +32,11 @@ Project 1 - Flocking**
 
 <tr>
 <td align="center">
-<img src="https://github.com/user-attachments/assets/043f3e62-366b-4ee3-893e-0d3226c50844" width="500">
+<img src="https://github.com/user-attachments/assets/043f3e62-366b-4ee3-893e-0d3226c50844" width="400">
 </td>
 
 <td align="center">
-<img src="https://github.com/user-attachments/assets/c6f9ca68-6944-41a5-9be6-3295e22d027f" width="500">
+<img src="https://github.com/user-attachments/assets/c6f9ca68-6944-41a5-9be6-3295e22d027f" width="400">
 </td>
 </tr>
 
