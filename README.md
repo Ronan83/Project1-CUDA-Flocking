@@ -36,7 +36,7 @@ Project 1 - Flocking**
 </td>
 
 <td align="center">
-<img src="https://github.com/user-attachments/assets/c6f9ca68-6944-41a5-9be6-3295e22d027f" width="400">
+<img src="images/100000_1.gif" width="400">
 </td>
 </tr>
 
