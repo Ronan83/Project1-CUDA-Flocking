@@ -17,14 +17,22 @@ Project 1 - Flocking**
 
 <tr>
 <td>
-<img src="https://github.com/user-attachments/assets/<img width="804" height="647" alt="5000_start" src="https://github.com/user-attachments/assets/9b8f240f-e606-425a-bf41-f4399b10aea4" />" width="500">
+<img src="https://github.com/user-attachments/assets/<img width="804" height="647" alt="5000_start" src="https://github.com/user-attachments/assets/df6574e8-82c6-4c5b-978f-53075a746b25" />" width="500">
 </td>
 
 <td>
-<img src="https://github.com/user-attachments/assets/<img width="803" height="648" alt="5000_runing" src="https://github.com/user-attachments/assets/45cb36ee-2f65-43c1-af2e-d33feefec936" />" width="500">
+<img src="https://github.com/user-attachments/assets/<img width="803" height="648" alt="5000_runing" src="https://github.com/user-attachments/assets/8d2234d6-6c4c-4bfc-b37d-b9839306b5ad" />
+" width="500">
 </td>
 </tr>
 </table>
+
+
+<img width="804" height="647" alt="5000_start" src="https://github.com/user-attachments/assets/df6574e8-82c6-4c5b-978f-53075a746b25" />
+<img width="803" height="648" alt="5000_runing" src="https://github.com/user-attachments/assets/8d2234d6-6c4c-4bfc-b37d-b9839306b5ad" />
+
+
+
 
 ### 100,000 Boids
 
