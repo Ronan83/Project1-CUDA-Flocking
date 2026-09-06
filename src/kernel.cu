@@ -333,15 +333,15 @@ __global__ void kernUpdateVelocityBruteForce(int N, glm::vec3* pos, glm::vec3* v
     int index = threadIdx.x + (blockIdx.x * blockDim.x);
     if (index >= N) return;
 
-    // 1. 算新速度 = 旧速度 + 速度增量
+    // 1. Calculate new speed = old speed + speed increment
     glm::vec3 newVel = vel1[index] + computeVelocityChange(N, index, pos, vel1);
 
-    // 2. 限速
+    // 2. Speed ??limit
     if (glm::length(newVel) > maxSpeed) {
         newVel = glm::normalize(newVel) * maxSpeed;
     }
 
-    // 3. 写入 vel2
+    // 3. Write to vel2
     vel2[index] = newVel;
 }
 
@@ -663,10 +663,6 @@ __global__ void kernUpdateVelNeighborSearchCoherent(
 }
         
 
-
-
-
-
 /**
 * Step the entire N-body simulation by `dt` seconds.
 */
@@ -681,7 +677,7 @@ void Boids::stepSimulationNaive(float dt) {
         numObjects, dt, dev_pos, dev_vel2);
     checkCUDAErrorWithLine("kernUpdatePos failed!");
 
-    // ping-pong：交换速度缓冲区
+    // ping-pong：Swap speed buffer
     std::swap(dev_vel1, dev_vel2);
 }
 
