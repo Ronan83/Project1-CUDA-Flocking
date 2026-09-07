@@ -276,6 +276,7 @@ substantially. Re-measuring with CUDA events averaged over a fixed step count fr
 seed would settle it, and is the obvious next step.
  
  ---
+## Extra Credit
 
 ### Grid-looping optimization
  
